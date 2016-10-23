@@ -2,8 +2,8 @@ class Bottles
 
   def verse(verse)
     <<~OUT
-      99 bottles of beer on the wall, 99 bottles of beer.
-      Take one down and pass it around, 98 bottles of beer on the wall.
+      #{verse} bottles of beer on the wall, #{verse} bottles of beer.
+      Take one down and pass it around, #{verse-1} bottles of beer on the wall.
     OUT
   end
 end
