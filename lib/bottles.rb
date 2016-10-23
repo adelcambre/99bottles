@@ -8,6 +8,10 @@ class Bottles
     start.downto(stop).map {|x| verse(x) }.join("\n")
   end
 
+  def song
+    verses(99, 0)
+  end
+
   def bottles(x)
     x == 1 ? "bottle" : "bottles"
   end
