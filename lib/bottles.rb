@@ -4,6 +4,11 @@ class Bottles
     "#{first(verse)}\n#{second(verse-1)}\n"
   end
 
+  def verses(*verses)
+    verses.map {|x| verse(x) }.join("\n")
+
+  end
+
   def bottles(x)
     x == 1 ? "bottle" : "bottles"
   end
